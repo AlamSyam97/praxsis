@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls.conf import include,path
 
 urlpatterns = [
-    path('',incude('ujian.urls')),
+    path('',include ('makanan.urls')),
     path('admin/', admin.site.urls),
-    
 ]
-
